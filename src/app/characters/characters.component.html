@@ -1,6 +1,8 @@
-<input name="name-search" placeholder="Search By Name" type="text" autocomplete="off" [(ngModel)]="searchTerm" />
-
-<span (click)="getCharacters(1)">Search</span>
+<div class="ListSearch">
+    <input class="ListSearch__Input" name="name-search" placeholder="Search By Name" type="text" autocomplete="off"
+        [(ngModel)]="searchTerm" />
+    <button class="ListSearch__Button" (click)="getCharacters(1)">Search</button>
+</div>
 
 <table *ngIf="characterCall" class="TableList">
     <tbody *ngIf="characterCall.results">

@@ -1,0 +1,34 @@
+@import '../../styles/variables';
+
+.ListSearch {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 40px;
+
+  &__Input {
+    background: $white;
+    border-radius: $borderRadius2;
+    border: none;
+    color: $textInverse;
+    display: flex;
+    flex: 1;
+    line-height: $lineHeight2;
+    padding: 11px 15px;
+    width: 100%;
+
+    &::placeholder {
+      color: $text3;
+    }
+  }
+
+  &__Button {
+    background: $primary;
+    border-radius: $borderRadius2;
+    border: none;
+    color: $white;
+    font-weight: $fontWeightSemibold;
+    line-height: $lineHeight2;
+    padding-left: 75px;
+    padding-right: 75px;
+  }
+}
