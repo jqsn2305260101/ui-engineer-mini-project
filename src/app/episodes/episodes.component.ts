@@ -5,22 +5,26 @@ import { EpisodesService } from '../episodes.service';
 @Component({
   selector: 'episodes',
   templateUrl: './episodes.component.html',
-  styleUrls: ['./episodes.component.scss']
+  styleUrls: ['./episodes.component.scss'],
 })
 export class EpisodesComponent implements OnInit {
   episodesCall: EpisodeApiResponse;
   pages: number[];
   currentPage = 1;
 
-  constructor(private episodesService: EpisodesService) { }
+  constructor(private episodesService: EpisodesService) {}
 
-  ngOnInit() { this.getEpisodes(); }
+  ngOnInit() {
+    this.getEpisodes();
+  }
 
   getEpisodes(page = 1): void {
-    this.episodesService.getEpisodes(page).subscribe(episodes => {
+    this.episodesService.getEpisodes(page).subscribe((episodes) => {
       this.episodesCall = episodes;
       this.fillInPageArray(episodes.info.pages);
       this.currentPage = page;
+      // Scrolls up to see content
+      document.querySelector('#episodes-table')?.scrollIntoView();
     });
   }
 
