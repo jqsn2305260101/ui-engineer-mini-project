@@ -7,6 +7,8 @@
 // of the application. In our case, "ram", (Rick and Morty).
 :root {
   // COLORS
+  --ram--black: #000000;
+  --ram--white: #ffffff;
   --ram--primary: #7b68ee;
   --ram--background-1: #1e272e;
   --ram--background-2: #2b343b;
@@ -26,6 +28,12 @@
   --ram--font-size-3: 32px;
   --ram--font-size-4: 18px;
   --ram--font-size-5: 16px;
+  --ram--font-weight-normal: 400;
+  --ram--font-weight-semibold: 500;
+  --ram--font-weight-bold: 700;
+  --ram--line-height-0: 0;
+  --ram--line-height-1: 1; // e.g. 16px
+  --ram--line-height-2: 1.125; // e.g. 18px
   --ram--border-radius-0: 0px;
   --ram--border-radius-1: 3px;
   --ram--border-radius-2: 6px;
@@ -40,6 +48,8 @@
 // SCSS variables.
 
 // COLORS
+$black: var(--ram--black);
+$white: var(--ram--white);
 $primary: var(--ram--primary);
 $background1: var(--ram--background-1);
 $background2: var(--ram--background-2);
@@ -58,6 +68,12 @@ $fontSize2: var(--ram--font-size-2);
 $fontSize3: var(--ram--font-size-3);
 $fontSize4: var(--ram--font-size-4);
 $fontSize5: var(--ram--font-size-5);
+$fontWeightNormal: var(--ram--font-weight-normal);
+$fontWeightSemibold: var(--ram--font-weight-semibold);
+$fontWeightBold: var(--ram--font-weight-bold);
+$lineHeight0: var(--ram--line-height-0);
+$lineHeight1: var(--ram--line-height-1);
+$lineHeight2: var(--ram--line-height-2);
 
 // EFFECTS
 $borderRadius0: var(--ram--border-radius-0);
