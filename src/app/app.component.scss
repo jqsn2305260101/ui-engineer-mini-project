@@ -1,5 +1,36 @@
 @import '../styles/variables';
 
+.HeroBanner {
+  align-items: center;
+  background: $white;
+  display: flex;
+  height: 50vh;
+  justify-content: center;
+  max-height: 260px;
+  min-height: 160px;
+  overflow: hidden;
+  position: relative;
+
+  &__Title {
+    color: $textInverse;
+    font-size: clamp($fontSize4, $fontSize1, 8vw);
+    font-weight: $fontWeightBold;
+    position: relative;
+    z-index: 1;
+  }
+
+  &__Image {
+    bottom: 0;
+    height: 95%;
+    left: 50%;
+    object-fit: cover;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-50%);
+    user-select: none;
+  }
+}
+
 .Navigation {
   display: flex;
   font-size: $fontSize3;
