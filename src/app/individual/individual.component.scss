@@ -8,7 +8,7 @@
   flex-direction: column;
   margin: 0 auto;
   max-width: 613px;
-  padding: 36px 36px 60px;
+  padding: $space7 $space7 $space12;
   text-align: center;
   width: 100%;
 
@@ -17,7 +17,7 @@
     height: 300px;
     overflow: hidden;
     width: 300px;
-    margin-bottom: $space11;
+    margin-bottom: $space9;
   }
 
   &__Image {
@@ -29,6 +29,6 @@
   &__Title {
     font-size: $fontSize2;
     font-weight: $fontWeightSemibold;
-    margin-bottom: $space10;
+    margin-bottom: $space8;
   }
 }
