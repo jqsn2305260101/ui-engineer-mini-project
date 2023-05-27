@@ -13,7 +13,7 @@
     display: flex;
     flex: 1;
     line-height: $lineHeight2;
-    padding: 11px $space3;
+    padding: 12px $space3;
     width: 100%;
 
     &::placeholder {
@@ -28,7 +28,7 @@
     color: $white;
     font-weight: $fontWeightSemibold;
     line-height: $lineHeight2;
-    padding-left: $space15;
-    padding-right: $space15;
+    padding-left: $space16;
+    padding-right: $space16;
   }
 }
