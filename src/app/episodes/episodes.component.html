@@ -7,7 +7,11 @@
     </tbody>
 </table>
 
-<ng-container *ngIf="pages" class="Pagination">
-    <span *ngFor="let p of pages" [ngClass]="{'active': (p===currentPage)}" (click)="getEpisodes(p)"
-        class="PaginationItem" tabIndex="0">{{p}}</span>
-</ng-container>
+<nav aria-label="pagination" class="Pagination">
+    <ul class="PaginationList">
+        <ng-container *ngIf="pages">
+            <li class="PaginationList__Item" *ngFor="let p of pages" [ngClass]="{'active': (p === currentPage)}"
+                (click)="getEpisodes(p)" tabIndex="0">{{p}}</li>
+        </ng-container>
+    </ul>
+</nav>

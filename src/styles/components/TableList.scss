@@ -1,10 +1,9 @@
 @import '../../styles/variables';
 
 .TableList {
-  margin-bottom: 32px;
-
   &__Item {
     background: $background2;
+    cursor: pointer;
 
     &:hover,
     &:focus {
