@@ -41,4 +41,29 @@
   --ram--border-radius-10: 100px;
   --ram--shadow-0: 0 0 0 rgba(0, 0, 0, 0);
   --ram--shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.11);
+  // LAYOUT
+  // Could use SCSS loop to generate this.
+  // Going to hard code to start for overall simplicity.
+  --ram--spacing-base: 5px;
+  --ram--space-0: calc(var(--ram--spacing-base) * 0);
+  --ram--space-1: calc(var(--ram--spacing-base) * 1);
+  --ram--space-2: calc(var(--ram--spacing-base) * 2);
+  --ram--space-3: calc(var(--ram--spacing-base) * 3);
+  --ram--space-4: calc(var(--ram--spacing-base) * 4);
+  --ram--space-5: calc(var(--ram--spacing-base) * 5);
+  --ram--space-6: calc(var(--ram--spacing-base) * 6);
+  --ram--space-7: calc(var(--ram--spacing-base) * 7);
+  --ram--space-8: calc(var(--ram--spacing-base) * 8);
+  --ram--space-9: calc(var(--ram--spacing-base) * 9);
+  --ram--space-10: calc(var(--ram--spacing-base) * 10);
+  --ram--space-11: calc(var(--ram--spacing-base) * 11);
+  --ram--space-12: calc(var(--ram--spacing-base) * 12);
+  --ram--space-13: calc(var(--ram--spacing-base) * 13);
+  --ram--space-14: calc(var(--ram--spacing-base) * 14);
+  --ram--space-15: calc(var(--ram--spacing-base) * 15);
+  --ram--space-16: calc(var(--ram--spacing-base) * 16);
+  --ram--space-17: calc(var(--ram--spacing-base) * 17);
+  --ram--space-18: calc(var(--ram--spacing-base) * 18);
+  --ram--space-19: calc(var(--ram--spacing-base) * 19);
+  --ram--space-20: calc(var(--ram--spacing-base) * 20);
 }
