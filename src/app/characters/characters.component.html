@@ -2,18 +2,23 @@
 
 <span (click)="getCharacters(1)">Search</span>
 
-<table *ngIf="characterCall">
+<table *ngIf="characterCall" class="TableList">
     <tbody *ngIf="characterCall.results">
-        <tr *ngFor="let c of characterCall.results" [routerLink]="['/character', c.id]" [queryParams]="{ fromPage : currentPage, nameSearch : searchTerm }">
-            <td>{{c.name}}</td>
-            <td>{{c.species}}</td>
-            <td>{{c.status}}</td>
-            <td>{{c.gender}}</td>
+        <tr class="TableList__Item" *ngFor="let c of characterCall.results" [routerLink]="['/character', c.id]"
+            [queryParams]="{ fromPage : currentPage, nameSearch : searchTerm }">
+            <td class="TableList__ItemCell">{{c.name}}</td>
+            <td class="TableList__ItemCell">{{c.species}}</td>
+            <td class="TableList__ItemCell">{{c.status}}</td>
+            <td class="TableList__ItemCell">{{c.gender}}</td>
         </tr>
     </tbody>
 </table>
 
-
-<ng-container *ngIf="pages">
-    <span *ngFor="let p of pages" [ngClass]="{'active': (p === currentPage)}" (click)="getCharacters(p)">{{p}}</span>
-</ng-container>
+<nav aria-label="pagination" class="Pagination">
+    <ul class="PaginationList">
+        <ng-container *ngIf="pages">
+            <li class="PaginationList__Item" *ngFor="let p of pages" [ngClass]="{'active': (p === currentPage)}"
+                (click)="getCharacters(p)" tabIndex="0">{{p}}</li>
+        </ng-container>
+    </ul>
+</nav>

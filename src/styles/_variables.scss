@@ -27,8 +27,9 @@
   --ram--font-size-4: 18px;
   --ram--font-size-5: 16px;
   --ram--border-radius-0: 0px;
-  --ram--border-radius-1: 6px;
-  --ram--border-radius-2: 10px;
+  --ram--border-radius-1: 3px;
+  --ram--border-radius-2: 6px;
+  --ram--border-radius-3: 10px;
   --ram--border-radius-10: 100px;
   --ram--shadow-0: 0 0 0 rgba(0, 0, 0, 0);
   --ram--shadow-1: 0px 1px 3px rgba(0, 0, 0, 0.11);
@@ -62,6 +63,10 @@ $fontSize5: var(--ram--font-size-5);
 $borderRadius0: var(--ram--border-radius-0);
 $borderRadius1: var(--ram--border-radius-1);
 $borderRadius2: var(--ram--border-radius-2);
+$borderRadius3: var(--ram--border-radius-3);
 $borderRadius10: var(--ram--border-radius-10);
 $shadow0: var(--ram--shadow-0);
 $shadow1: var(--ram--shadow-1);
+
+// LAYOUT
+$appWidth: 1004px;

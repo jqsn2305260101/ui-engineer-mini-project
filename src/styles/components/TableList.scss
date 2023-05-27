@@ -1,0 +1,32 @@
+@import '../../styles/variables';
+
+.TableList {
+  margin-bottom: 32px;
+
+  &__Item {
+    background: $background2;
+
+    &:hover,
+    &:focus {
+      background: $background3;
+      color: $primary;
+    }
+  }
+
+  &__ItemCell {
+    border-top: 1px solid $border1;
+    border-bottom: 1px solid $border1;
+    padding: 10px;
+
+    &:first-child {
+      border-bottom-left-radius: $borderRadius1;
+      border-left: 1px solid $border1;
+      border-top-left-radius: $borderRadius1;
+    }
+    &:last-child {
+      border-bottom-right-radius: $borderRadius1;
+      border-right: 1px solid $border1;
+      border-top-right-radius: $borderRadius1;
+    }
+  }
+}

@@ -1,4 +1,9 @@
-// Considering this the main entrypoint for the application.
+// Base styles
+@import './styles/variables';
+@import './styles/reset';
 
-@import './styles/base';
-@import './styles/html';
+// Global styles
+@import './styles/html/index';
+
+// Component styles
+@import './styles/components/index';

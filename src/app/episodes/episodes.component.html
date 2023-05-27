@@ -1,12 +1,13 @@
-<table>
+<table class="TableList">
     <tbody *ngIf="episodesCall?.results">
-        <tr *ngFor="let e of episodesCall.results">
-            <td>{{e.name}}</td>
-            <td>{{e.episode}}</td>
+        <tr *ngFor="let e of episodesCall.results" class="TableList__Item">
+            <td class="TableList__ItemCell">{{e.name}}</td>
+            <td class="TableList__ItemCell">{{e.episode}}</td>
         </tr>
     </tbody>
 </table>
 
-<ng-container *ngIf="pages">
-    <span *ngFor="let p of pages" [ngClass]="{'active': (p===currentPage)}" (click)="getEpisodes(p)">{{p}}</span>
+<ng-container *ngIf="pages" class="Pagination">
+    <span *ngFor="let p of pages" [ngClass]="{'active': (p===currentPage)}" (click)="getEpisodes(p)"
+        class="PaginationItem" tabIndex="0">{{p}}</span>
 </ng-container>
