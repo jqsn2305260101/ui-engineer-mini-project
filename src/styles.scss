@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+// Creating the base variables as CSS variables.
+// This leverages native (modern) browser technology for variable rendering,
+// debugging (e.g. Chrome developer tools), and usage with JavaScript.
+//
+// To avoid collision with external styles (e.g. Chrome extensions or
+// 3rd party libraries), we'll prefix all our variables with the namespace
+// of the application. In our case, "ram", (Rick and Morty).
+:root {
+  --ram--primary: #7b68ee;
+  --ram--background1: #1e272e;
+  --ram--background2: #2b343b;
+  --ram--background3: #384047;
+  --ram--backgroundInverse: #ffffff;
+  --ram--text1: #ffffff;
+  --ram--text2: #abaeb0;
+  --ram--text3: #7c828d;
+  --ram--textInverse: #292d34;
+  --ram--border1: #384047;
+}
+
+// SCSS variables are still useful, even though we have native CSS variables,
+// because it is simply to reference the CSS variables with more concise
+// SCSS variables.
+$primary: var(--ram--primary);
+$background1: var(--ram--background1);
+$background2: var(--ram--background2);
+$background3: var(--ram--background3);
+$backgroundInverse: var(--ram--backgroundInverse);
+$text1: var(--ram--text1);
+$text2: var(--ram--text2);
+$text3: var(--ram--text3);
+$textInverse: var(--ram--textInverse);
+$border1: var(--ram--border1);
