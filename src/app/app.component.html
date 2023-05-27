@@ -3,10 +3,19 @@
     <a routerLink="/characters" class="nav-link">The Rick and Morty</a>
   </h1>
 
-  <a routerLink="/characters" [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }"
-    class="nav-link">Characters</a>
-
-  <a routerLink="/episodes" class="nav-link">Episode Guide</a>
+  <div role="navigation" aria-label="Navigation" class="Navigation">
+    <ul class="NavigationList">
+      <li class="NavigationList__Item">
+        <a class="NavigationList__Link" routerLink="/characters"
+          [queryParams]="{ fromPage : characterPage, nameSearch : characterNameSearch }"
+          routerLinkActive="active">Characters</a>
+      </li>
+      <li class="NavigationList__Item">
+        <a class="NavigationList__Link" routerLink="/episodes" routerLinkActive="active">Episode
+          Guide</a>
+      </li>
+    </ul>
+  </div>
 
   <div class="Container">
     <router-outlet></router-outlet>

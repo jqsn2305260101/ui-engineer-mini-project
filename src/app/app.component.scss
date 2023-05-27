@@ -1,0 +1,25 @@
+@import '../styles/variables';
+
+.Navigation {
+  display: flex;
+  font-size: $fontSize3;
+  margin: 56px 0 78px;
+}
+
+.NavigationList {
+  align-items: center;
+  display: flex;
+  gap: 45px;
+  justify-content: center;
+  list-style: none;
+  margin: 0 auto;
+
+  &__Link {
+    color: $text2;
+
+    &.active {
+      color: $text1;
+      font-weight: $fontWeightSemibold;
+    }
+  }
+}
