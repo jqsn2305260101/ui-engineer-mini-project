@@ -1,15 +1,15 @@
 .Pagination {
-  margin: 32px auto 0;
+  margin: $space7 auto 0;
 }
 
 .PaginationList {
-  column-gap: 20px;
+  column-gap: $space4;
   display: flex;
   flex-wrap: wrap;
   list-style: none;
   margin: 0;
   padding: 0;
-  row-gap: 10px;
+  row-gap: $space2;
 
   &__Item {
     cursor: pointer;

@@ -2,8 +2,8 @@
 
 .ListSearch {
   display: flex;
-  gap: 24px;
-  margin-bottom: 40px;
+  gap: $space5;
+  margin-bottom: $space8;
 
   &__Input {
     background: $white;
@@ -13,7 +13,7 @@
     display: flex;
     flex: 1;
     line-height: $lineHeight2;
-    padding: 11px 15px;
+    padding: 11px $space3;
     width: 100%;
 
     &::placeholder {
@@ -28,7 +28,7 @@
     color: $white;
     font-weight: $fontWeightSemibold;
     line-height: $lineHeight2;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-left: $space15;
+    padding-right: $space15;
   }
 }

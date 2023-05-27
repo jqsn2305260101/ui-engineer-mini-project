@@ -17,7 +17,7 @@
     height: 300px;
     overflow: hidden;
     width: 300px;
-    margin-bottom: 54px;
+    margin-bottom: $space11;
   }
 
   &__Image {
@@ -29,6 +29,6 @@
   &__Title {
     font-size: $fontSize2;
     font-weight: $fontWeightSemibold;
-    margin-bottom: 49px;
+    margin-bottom: $space10;
   }
 }

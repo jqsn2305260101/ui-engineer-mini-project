@@ -15,7 +15,7 @@
   &__ItemCell {
     border-top: 1px solid $border1;
     border-bottom: 1px solid $border1;
-    padding: 10px;
+    padding: $space2;
 
     &:first-child {
       border-bottom-left-radius: $borderRadius1;

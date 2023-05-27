@@ -34,13 +34,13 @@
 .Navigation {
   display: flex;
   font-size: $fontSize3;
-  margin: 56px 0 78px;
+  margin: $space11 0 $space16;
 }
 
 .NavigationList {
   align-items: center;
   display: flex;
-  gap: 45px;
+  gap: $space9;
   justify-content: center;
   list-style: none;
   margin: 0 auto;
