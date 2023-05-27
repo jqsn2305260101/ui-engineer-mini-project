@@ -1,10 +1,10 @@
 <div class="ListSearch" id="list-search">
     <input class="ListSearch__Input" name="name-search" placeholder="Search By Name" type="text" autocomplete="off"
-        [(ngModel)]="searchTerm" />
+        [(ngModel)]="searchTerm" aria-label="Character search" />
     <button class="ListSearch__Button" (click)="getCharacters(1)">Search</button>
 </div>
 
-<table *ngIf="characterCall" class="TableList" id="character-table">
+<table *ngIf="characterCall" class="TableList" id="character-table" aria-label="Character list">
     <tbody *ngIf="characterCall.results">
         <tr class="TableList__Item" *ngFor="let c of characterCall.results" [routerLink]="['/character', c.id]"
             [queryParams]="{ fromPage : currentPage, nameSearch : searchTerm }">

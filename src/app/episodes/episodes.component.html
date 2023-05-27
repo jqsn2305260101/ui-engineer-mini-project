@@ -1,4 +1,4 @@
-<table class="TableList" id="episodes-table">
+<table class="TableList" id="episodes-table" aria-label="Episodes list">
     <tbody *ngIf="episodesCall?.results">
         <tr *ngFor="let e of episodesCall.results" class="TableList__Item">
             <td class="TableList__ItemCell">{{e.name}}</td>
